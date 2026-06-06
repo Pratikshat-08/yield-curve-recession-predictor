@@ -2,12 +2,40 @@
 A Treasury &amp; Asset-Liability Management project analyzing the predictive power of the U.S. 10Y–2Y yield spread using logistic regression and recession lead-time analysis.
 
 
+# Project Purpose
+This repository provides a reproducible analysis of whether yield curve inversions (10Y–2Y spread turning negative) serve as reliable leading indicators of U.S. recessions, and how they can inform Treasury and Asset-Liability Management (ALM) strategies
+
+
 # Abstract
 This study examines the relationship between the U.S. Treasury 10-Year minus 2-Year yield spread (T10Y2Y) and subsequent economic recessions using 600 monthly observations spanning 1976 to 2025. Employing descriptive statistics, logistic regression modelling, and recession lead-time estimation, the analysis evaluates whether yield curve inversions serve as reliable leading indicators of economic downturns and assesses their practical relevance from a Treasury and Asset-Liability Management (ALM) perspective. Results confirm a strong negative relationship between the yield spread and future recession probability, with inversions preceding recessions by an average of 11 months.
+
 
 # Introduction
 The shape of the yield curve specifically the spread between long-term and short-term Treasury yields has long been regarded as one of the most closely monitored forward-looking indicators of macroeconomic conditions. Under normal circumstances, a positively sloped yield curve reflects expectations of sustained economic growth and positive inflation. When this relationship reverses and short-term rates rise above long-term rates, the resulting inversion has historically preceded the majority of major U.S. recessions.
 This study investigates the empirical relationship between the 10Y–2Y Treasury yield spread and the subsequent occurrence of recession, using monthly data sourced from the Federal Reserve Economic Data (FRED) database. The findings are evaluated in the context of Treasury management and ALM, where yield curve dynamics directly inform funding strategy, interest-rate risk positioning, and liquidity planning.
+
+
+# Methodology
+Collected monthly 10-Year Treasury Yield and 2-Year Treasury Yield data from the Federal Reserve Economic Data (FRED) database for the period 1976–2025.
+
+Calculated the 10Y–2Y yield spread.
+
+Obtained U.S. recession data from the National Bureau of Economic Research (NBER) recession indicator series available through FRED.
+
+Conducted descriptive statistical analysis to examine the distribution, variability, and key characteristics of the yield spread.
+
+Identified yield curve inversion periods where the spread became negative and measured their frequency within the sample.
+
+Analyzed extreme observations, including the deepest inversion and steepest positive yield curve, and linked them to historical economic conditions.
+
+Compared average yield spreads during periods that were followed by a recession within the next 12 months against periods that were not.
+
+Developed a logistic regression model with the yield spread as the independent variable and the occurrence of a recession within the subsequent 12 months as the dependent variable.
+
+Estimated recession probabilities based on the logistic regression results and evaluated the relationship between yield curve movements and future economic downturns.
+
+Performed lead-time analysis by measuring the time gap between the onset of yield curve inversions and the start of subsequent recessions.
+
 
 # Descriptive Statistics
 Descriptive analysis of the 10Y–2Y Treasury yield spread revealed that the series averaged 0.85 percentage points over the sample period, indicating that the yield curve remained positively sloped under normal economic conditions. However, the spread exhibited considerable variability, with a standard deviation of 0.91 percentage points, reflecting the significant changes in yield curve shape that occur across different monetary policy and business cycle environments.
@@ -42,3 +70,11 @@ The consistency of this signal across multiple business cycles each shaped by di
 This study provides robust empirical evidence that the 10Y–2Y U.S. Treasury yield spread is an effective leading indicator of economic recessions. Across 600 monthly observations spanning five decades, the yield curve demonstrated a consistent and economically meaningful relationship with future economic conditions.
 Yield curve inversions occurred prior to all major recessionary episodes in the sample. Statistical analysis confirmed a significant negative relationship between the yield spread and recession probability (logistic regression coefficient: −1.429). The comparison of pre-recession and non-recession periods revealed a spread differential of approximately one percentage point, while lead-time analysis established that inversions provided an average of 11 months of advance warning — a meaningful horizon for institutional risk management.
 The results demonstrate that the yield curve is not merely a reflection of prevailing market conditions, but a forward-looking instrument encoding market expectations about future growth, monetary policy, and economic risk. Its strong and historically consistent relationship with recessionary episodes makes it a valuable tool for economic forecasting, risk assessment, and strategic decision-making within Treasury and Asset-Liability Management functions.
+
+# References
+Federal Reserve Economic Data (FRED)
+NBER recession dating
+
+
+Author-
+Pratiksha Tayade
